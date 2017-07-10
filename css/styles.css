@@ -55,7 +55,7 @@ header p {
 	padding: 10px 20px;
 	background-color: rgb(97, 112, 69);
 	border: 3px solid rgb(232, 239, 218);
-	border-bottom: none;
+	
 	transition-property: background-color;
 	transition-duration: 1s;
 }
@@ -67,7 +67,72 @@ header p {
 	border-bottom: none;
 }
 
+@media screen and (max-width: 700px) {
+	.site-nav li {
+		width: 50%;
+		margin-right: 0;
+	}
+
+	.site-nav a {
+		padding: 15px 0;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.site-nav li {
+		width: 50%;
+		margin-right: 0;
+	}
+}
+
 /* End Site Navigation */
+
+/* Bounce Animation */
+
+@keyFrames fadeBounce {
+	0% {
+		opacity: 0;
+		transform: translateY(-200%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* End Bounce Animation */
+
+.box-a {
+	animation-name: fadeBounce;
+	animation-duration: 1s;
+	display: block;
+	width: 50%;
+	padding: 10px 10px 10 30px;
+	border: 2px solid black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 5px -2px rgba(0,0,0, .10);
+	border-radius: 10px;
+	color: #FFF;
+	background-color: blue;
+}
+
+.box-b {
+	text-align: center;
+	background-color: #CCC;
+	margin-bottom: 40px;
+	line-height: 200px;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+/*  */
+
+
 
 /* Banner Overlay */
 
@@ -168,6 +233,19 @@ table.fruits tr :nth-child(3) {
 	box-sizing: border-box;
 }
 
+.info-box {
+	background-color: #efeedb;
+	border: 5px solid #e6e5c2;
+	padding: 20px 40px 7px 40px;
+	margin-bottom: 1em; 
+}
+
+@media screen and (max-width: 480px) {
+	.hide-small {
+		display: none;
+	}
+}
+
 /* Form Styles */
 
 form {
@@ -258,6 +336,40 @@ footer {
 	color: #999;
 	padding-bottom: 20px;
 	padding-top: 20px;
+}
+
+@media screen and (max-width: 700px) { /*refer .main-area &
+	.sidebar*/
+	.main-area,
+	.sidebar {
+		width: auto;
+		float: none;
+	}
+
+	.main-area {
+		padding-right: 0;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	
+	body {
+		font-size: 17px;
+	}
+
+	.container {
+		max-width: 1200px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.content-area {
+		padding-top: 20px;
+	}
 }
 
 .group:before,
