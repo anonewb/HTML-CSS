@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Basic HTML and CSS</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="js/jq.js"></script>
+		<script type="text/javascript" src="js/cycle2.js"></script>
 	</head>
 	<body>
 		
@@ -25,18 +27,49 @@
 			<div class="content-area group"> <!-- outside Header and Footer -->
 				<div class="container">
 					<div class="main-area">
-						<div class="box-a">
-							<p>Box 1</p>	
+
+						<div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+							<span class="cycle-prev">&laquo</span>
+							<span class="cycle-next">&raquo</span>
+							<span class="cycle-pager"></span>
+							<div class="slide">
+								<img src="images/cat-1.jpg" alt="cat">
+								<div class="slide-text">
+									<h3>This is 1st cat</h3>
+									<p>This is the discription of 1st cat
+									<a href="#" class="btn-a">Call to action</a></p>
+
+								</div>
+							</div>
+							<div class="slide">
+								<img src="images/cat-2.jpg" alt="cat">
+								<div class="slide-text">
+									<h3>This is 2nd cat</h3>
+									<p>This is the discription of 2nd cat</p>
+								</div>
+							</div>
+							<div class="slide">
+								<img src="images/dog-1.jpg" alt="dog">
+								<div class="slide-text">
+									<h3>This is 1st dog</h3>
+									<p>This is the discription of 1st dog</p>
+								</div>
+							</div>	
 						</div>
-						<div class="box-a">
-							<p>Box 2</p>	
-						</div>
-						<div class="box-a">
-							<p>Box 3</p>	
-						</div>
-						<div class="box-a">
-							<p>Box 4</p>	
-						</div>
+						<div class="row boxes group">
+							<div class="box-a">
+								<p>Box 1</p>	
+							</div>
+							<div class="box-a">
+								<p>Box 2</p>	
+							</div>
+							<div class="box-a">
+								<p>Box 3</p>	
+							</div>
+							<div class="box-a">
+								<p>Box 4</p>	
+							</div>
+						</div>	
 						<div class="info-box hide-small">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sapien ante, viverra ac felis dapibus, pulvinar bibendum purus.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 						</div>
