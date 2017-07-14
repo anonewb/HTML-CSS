@@ -5,9 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Basic HTML and CSS</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css">
 		<script type="text/javascript" src="js/jq.js"></script>
 		<script type="text/javascript" src="js/cycle2.js"></script>
 		<script type="text/javascript" src="js/declarativetoggle.js"></script>
+		<script type="text/javascript" src="js/lightbox.js"></script>
 	</head>
 	<body>
 		
@@ -30,6 +32,20 @@
 			<div class="content-area group"> <!-- outside Header and Footer -->
 				<div class="container">
 					<div class="main-area">
+
+						<div class="thumbnails group">
+
+							<!-- <a href="actual img"><img src="thumbnail img"></a> -->
+
+							<a href="images/apples.jpg" data-lightbox="gallery" data-title="This is an apple"><img src="images/apples.jpg" alt="apples"></a>
+							<a href="images/bee.jpg" data-lightbox="gallery" data-title="This is a bee"><img src="images/bee.jpg" alt="bee"></a>
+							<a href="images/bread.jpg" data-lightbox="gallery"><img src="images/bread.jpg" alt="bread"></a>
+							<a href="images/bus.jpg" data-lightbox="gallery"><img src="images/bus.jpg" alt="bus"></a>
+							<a href="images/flower.jpg" data-lightbox="gallery"><img src="images/flower.jpg" alt="flower"></a>
+							<a href="images/orange.jpg" data-lightbox="gallery"><img src="images/orange.jpg" alt="orange"></a>
+							<a href="images/library-hero.jpg" data-lightbox="gallery"><img src="images/library-hero.jpg" alt="library-hero"></a>
+							<a href="images/ocean.jpg" data-lightbox="gallery"><img src="images/ocean.jpg" alt="ocean"></a>
+						</div>
 
 						<div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
 							<span class="cycle-prev">&laquo</span>
