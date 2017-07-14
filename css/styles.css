@@ -33,6 +33,8 @@ header p {
 }
 
 /* Site Navigation */
+
+
 .site-nav {
 	margin-top: 20px;
 }
@@ -89,6 +91,40 @@ header p {
 }
 
 /* End Site Navigation */
+
+/* Reveal and hide styles */
+
+.toggle-btn {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	.toggle-btn-visible {
+		display: block;
+	}
+
+	.toggle-target-hidden {
+		display: none;
+	}
+
+	.toggle-target-expanded {
+		display: block;
+	}
+}
+
+.main-area .toggle-btn-visible {
+		display: block;
+	}
+
+.main-area .toggle-target-hidden {
+		display: none;
+	}
+
+.main-area .toggle-target-expanded {
+		display: block;
+	}
+
+/* End Reveal and hide styles */
 
 /* Slideshow styles */
 
